@@ -1,0 +1,9 @@
+create table Transaction (
+	transaction_id	integer(4)
+	transaction_date	date
+	transaction_type	varchar(255)
+	member_id		integer(8)
+	amount		double(10,2)
+primary key(transaction_id),
+foreign key(member_id) references Members(member_id)
+);

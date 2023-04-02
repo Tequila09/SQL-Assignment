@@ -1,0 +1,13 @@
+create table Booking(
+	booking_id		integer(4)
+	f_name		varchar(255)
+	l_name		varchar(255)
+	member_id		integer(8)
+	trainer_id		integer(4)
+	booking_date	date
+	start_time		datetime
+	end_time		datetime
+primary key(booking_id),
+foreign key(member_id) references Members(member_id),
+foreign key(trainer_id) references Trainer(trainer_id)
+);

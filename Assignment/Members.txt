@@ -1,0 +1,23 @@
+create table Members (
+	member_id			integer(8)
+	f_name			varchar(255)
+	l_name			varchar(255)
+	phone_number		integer(15)
+	membership_status		varchar(255)
+	age				integer(3)
+	email				varchar(255)
+	trainer_id			integer(8)
+	membership_expiry		date
+	registration_id		integer(8)
+	booking_id			integer(8)
+	transaction_id		integer(8)
+	schedule_id			integer(8)
+	plan_id			integer(8)
+primary key(member_id),
+foreign key(trainer_id) references Trainer(trainer_id),
+foreign key(registration_id) references Registration(registration_id),
+foreign key(booking_id) references Booking(booking_id),
+foreign key(transaction_id) references Transaction(transaction_id),
+foreign key(schedule_id) references Training_Schedule(schedule_id),
+foreign key(plan_id) references Workout_Plan(plan_id)
+);

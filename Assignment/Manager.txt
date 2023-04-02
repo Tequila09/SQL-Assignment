@@ -1,0 +1,10 @@
+create table Manager (
+	manager_id		integer(4)
+	f_name		varchar(255)
+	l_name		varchar(255)
+	email			varchar(255)
+	salary		double(10,2)
+	phone_number	integer(15)
+primary key(manager_id),
+foreign key(salary) references Salary(salary)
+);

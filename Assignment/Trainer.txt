@@ -1,0 +1,11 @@
+create table Trainer (
+	trainer_id		integer(8)
+	schedule_id		integer(8)
+	f_name		varchar(255)
+	l_name		varchar(255)
+	membership_status	varchar(255)
+	phone_number	integer(15)
+	email			varchar(255)
+primary key(trainer_id),
+foreign key(schedule_id)
+);

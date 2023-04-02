@@ -1,0 +1,11 @@
+create table Registration (
+	registration_id		integer(8)	not null
+	f_name			varchar(255)
+	l_name			varchar(255)
+	phone_number		integer(15)
+	email				varchar(255)
+	age				integer(3)
+	registration_date		date
+primary key(registration_id)
+);
+

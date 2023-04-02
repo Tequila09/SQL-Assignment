@@ -1,0 +1,11 @@
+create table Employees (
+	employee_id			integer(4)
+	email				varchar(255)
+	phone_number		integer(15)
+	salary			double(10,2)
+	hire_date			date
+	memebership_status	varchar(255)
+	employee_status		varchar(255)
+primary key(employee_id),
+foreign key(salary) references Salary(salary)
+);

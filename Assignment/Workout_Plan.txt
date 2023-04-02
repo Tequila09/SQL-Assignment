@@ -1,0 +1,8 @@
+create table Workout_Plan (
+	plan_id	integer(8)
+	schedule_id	integer(8)
+	plan_name	varchar(255)
+	description	varchar(255)
+primary key(plan_id),
+foreign key(schedule_id) references Training_Schedule(schedule_id)
+);
